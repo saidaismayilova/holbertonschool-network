@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # change localhost
 cp /etc/hosts /root/hosts.new
+sed -i '/localhosts/d'
 echo "127.0.0.2 localhosts" >> /root/hosts.new
 echo "8.8.8.8 facebook.com" >> /root/hosts.new
 cp /root/hosts.new /etc/hosts
