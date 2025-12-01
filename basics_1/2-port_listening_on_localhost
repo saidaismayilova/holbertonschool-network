@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Listen on port 98 on localhost and print received data to stdout
+
+# Use netcat in listen mode
+nc -l 98
